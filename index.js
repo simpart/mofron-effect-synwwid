@@ -22,7 +22,7 @@ mf.effect.Synwwid = class extends Syncwin {
     
     offset (prm) {
         try {
-            return super.offset(prm, (undefined === prm) ? undefined : 0);
+            return super.offset((undefined === prm) ? undefined : '0px', prm);
         } catch (e) {
             console.error(e.stack);
             throw e;

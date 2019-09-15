@@ -1,6 +1,6 @@
 {
   "name": "mofron-effect-synwwid",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "sync window of width effect for mofron",
   "main": "index.js",
   "scripts": {
