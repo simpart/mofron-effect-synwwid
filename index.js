@@ -1,32 +1,34 @@
 /**
  * @file mofron-effect-synwwid/index.js
- * @author simpart
+ * @brief effect for synchronize component width with window
+ * @license MIT
  */
-const mf = require('mofron');
 const Syncwin = require('mofron-effect-syncwin');
 
-mf.effect.Synwwid = class extends Syncwin {
-    
-    constructor (po) {
+module.exports = class extends Syncwin {
+    /**
+     * initialize effect
+     * 
+     * @param (mixed) offset parameter
+     *                effect config
+     * @short x_offset
+     * @type private
+     */
+    constructor (prm) {
         try {
             super();
             this.name('Synwwid');
-            this.prmMap('offset');
+            this.shortForm('x_offset');
             this.valid(true, false);
-            this.prmOpt(po);
-        } catch (e) {
-            console.error(e.stack);
-            throw e;
-        }
-    }
-    
-    offset (prm) {
-        try {
-            return super.offset((undefined === prm) ? undefined : '0px', prm);
+            
+	    /* set config */
+	    if (undefined !== prm) {
+                this.config(prm);
+	    }
         } catch (e) {
             console.error(e.stack);
             throw e;
         }
     }
 }
-module.exports = mf.effect.Synwwid;
+/* end of file */

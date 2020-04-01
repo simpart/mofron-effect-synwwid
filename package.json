@@ -1,6 +1,6 @@
 {
   "name": "mofron-effect-synwwid",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "sync window of width effect for mofron",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/simpart/mofron-effect-synwwid.git"
   },
   "keywords": [
-    "front-end"
+    "front-end","mofron"
   ],
   "dependencies": {
     "mofron-effect-syncwin" : ""
