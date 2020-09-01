@@ -1,0 +1,5 @@
+<setting>
+    <tag load="mofron-effect-synwwid">SynwWid</tag>
+</setting>
+
+<div effect=SynwWid></div>

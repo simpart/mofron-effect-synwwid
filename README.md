@@ -11,8 +11,11 @@ npm install mofron mofron-effect-synwwid
 
 # Sample
 ```html
-<tag load="mofron-effect-synwwid">SynwWid</tag>
+<setting>
+    <tag load="mofron-effect-synwwid">SynwWid</tag>
+</setting>
 
 <div effect=SynwWid></div>
 ```
+
 
